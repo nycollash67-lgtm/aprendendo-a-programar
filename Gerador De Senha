@@ -1,0 +1,14 @@
+import random
+import string
+
+print("=== GERADOR DE SENHAS ===")
+
+tamanho = int(input("Quantos caracteres a senha deve ter? "))
+
+caracteres = string.ascii_letters + string.digits
+senha = ""
+
+for i in range(tamanho):
+    senha += random.choice(caracteres)
+
+print("\nSenha gerada:", senha)
