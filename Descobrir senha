@@ -1,0 +1,17 @@
+import random
+
+senha = int(input("Digite uma senha de 4 dígitos: "))
+print("O computador vai tentar adivinhar...")
+
+tentativas = 0
+
+while True:
+    adivinhar = random.randint(0, 9999)
+    tentativas += 1
+    
+    if adivinhar == senha:
+        print(f"Senha encontrada: {senha}")
+        print(f"Tentativas: {tentativas}")
+        break
+    else:
+        print("Adivinhando...")
